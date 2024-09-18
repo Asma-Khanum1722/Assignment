@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 100%;
+    background-color: rgb(11, 21, 38);
+}
+
+.inner-container{
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.hero-image{
+    align-items: flex-end;
+}
+
+/* media queries */
+
+@media (max-width: 900px){
+
+    .inner-container{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 380px){
+
+    .inner-container{
+        padding: 30px 0px;
+    }
+
+    .heading{
+        font-size: 28px;
+    }
+
+    .para{
+        font-size: 15px;
+    }
+}
